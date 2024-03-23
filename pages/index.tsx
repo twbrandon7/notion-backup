@@ -26,7 +26,7 @@ export default function Page({ recordMap }: { recordMap: ExtendedRecordMap }) {
   return (
     <NotionPage
       recordMap={recordMap}
-      rootDomain={rootDomain}
+      rootDomain={rootDomain ?? undefined}
       rootPageId={rootNotionPageId}
       previewImagesEnabled={previewImagesEnabled}
     />
